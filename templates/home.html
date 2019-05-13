@@ -6,22 +6,19 @@
 
 {% block content %}
 {% if user.is_authenticated %}
-  Hi {{ user.username }}!
-  
-  
-  <h1>Team Palindrome</h1>
-<div align="center" class="row">
-  <div class="col-sm-6">
-    <button class="btn second">Secure Mode</button>
-  </div>
-  <div class="col-sm-4">
-    <button class="btn first">Normal Mode</button>
-  </div>
+<h1> Hi {{ user.username }} </h1>
+  <button class="btn third">Secure Mode</button>
+  <button class="btn fourth">Normal Mode</button>
+  <form method="get" action="{% url 'login' %}">
+      <p>Enter IP Address</p>
+      <button class="btn fifth">Submit</button>
+    </form>
+</div>
 </div>
 {% else %}
-  <h1 >Team Palidome </h1>
-  <form method="get" action="{% url 'login' %}">
-        <button class="btn second" >Login</button>
-    </form>
+<h1>Team Palidome </h1>
+<form method="get" action="{% url 'login' %}">
+  <button class="btn second">Login</button>
+</form>
 {% endif %}
 {% endblock %}
