@@ -1,4 +1,5 @@
 <!-- templates/home.html -->
+
 {% extends 'base.html' %}
 
 {% block title %}Home{% endblock %}
@@ -6,8 +7,31 @@
 {% block content %}
 {% if user.is_authenticated %}
   Hi {{ user.username }}!
+  <p>
+
+    <style type="text/css">
+      .btn1 {
+          background-color:red;
+          cursor:pointer;
+      }
+  </style>
+  
+  <button class="btn1">Secure Mode</button>
+  </p>
+  <p>
+    <style type="text/css">
+      .btn {
+          background-color:green;
+          cursor:pointer;
+      }
+  </style>
+  
+  <button class="btn">Normal Mode</button>
+  </p>
+
 {% else %}
-  <p>You are not logged in</p>
+  <h1>Team Palindrome</h1>
   <a href="{% url 'login' %}">login</a>
+
 {% endif %}
 {% endblock %}
