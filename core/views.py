@@ -9,5 +9,19 @@ from .forms import addIPForm
 
 
 class add_IP(generic.CreateView):
-    form_class = addIPForm
     template_name = 'add_ip.html'
+
+    def get(self, request):
+            form = addIPForm()
+            return render(request, self.template_name, {'form': form})
+
+    def post(self, request):
+        form = addIPForm(request.POST)
+        if form.is_valid():
+            ipaddr = form.save(commit=false)
+            post.user = request.user
+            post.save()
+
+        args = {'form': form, 'text': text}
+        return render(request, self.template_name, args)
+
