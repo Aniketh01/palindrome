@@ -84,12 +84,28 @@ h6 {
 	outline: 0;
   }
   
-  .third {
+  .first {
 	border-color: #3498db;
 	color: #fff;
 	box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
 	transition: all 150ms ease-in-out;
   }
-  .third:hover {
+  .first:hover {
 	box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
   }
+  
+  .second {
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	margin-top:30%;
+	margin-bottom:0%;
+	border-color: #3498db;
+	color: #fff;
+	box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+	transition: all 150ms ease-in-out;
+  }
+  .second:hover {
+	box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  }
+  
