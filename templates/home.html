@@ -7,12 +7,19 @@
 {% block content %}
 {% if user.is_authenticated %}
 <h1> Hi {{ user.username }} </h1>
-  <button class="btn third">Secure Mode</button>
-  <button class="btn fourth">Normal Mode</button>
-  <form method="get" action="{% url 'login' %}">
-      <p>Enter IP Address</p>
-      <button class="btn fifth">Submit</button>
-    </form>
+<div>
+  <form method="get" action=" NA">
+    <div class="wrapper">
+      <input class="input" placeholder="Please Enter IP Address" type="text">
+      <span class="underline"></span>
+      <button class="btn third">Secure Mode</button>
+      <button class="btn fourth">Normal Mode</button>
+    </div>
+  </form>
+</div>
+<div>
+
+</div>
 </div>
 </div>
 {% else %}

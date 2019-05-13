@@ -9,6 +9,10 @@ body {
 	animation: Gradient 15s ease infinite;
 }
 
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,900);
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+
 @-webkit-keyframes Gradient {
 	0% {
 		background-position: 0% 50%
@@ -135,7 +139,82 @@ h6 {
 	box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
 	transition: all 150ms ease-in-out;
   }
-  .foruth:hover {
+  .fourth:hover {
 	box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  }
+
+  .fifth {
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	margin-top:30%;
+	margin-bottom:20%;
+	border-color: #3498db;
+	color: #fff;
+	box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+	transition: all 150ms ease-in-out;
+  }
+  .fifth:hover {
+	box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  }
+  
+  input {
+	color: black;
+  }
+  
+  form > button {
+	color: black;
+	border-radius: 3px;
+  }
+
+.wrapper {
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	margin-top:30%;
+	margin-bottom:0%;
+	border-radius: 2px;
+	box-sizing: border-box;
+  }
+  
+  .input {
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #CCC;
+	color: #555;
+	box-sizing: border-box;
+	font-family: 'Arvo';
+	font-size: 18px;
+	height: 50px;
+	left: 50%;
+	margin: -25px 0 0 -100px;
+	padding: 10px 0px;
+	position: relative;
+	top: 50%;
+	width: 200px;
+	
+  }
+  
+  input::-webkit-input-placeholder {
+	color: #AAA;
+  }
+  
+  input:focus::-webkit-input-placeholder {
+	color: dodgerblue;
+  }
+  
+.underline {
+	background-color: dodgerblue;
+	display: inline-block;
+	height: 2px;
+	left: 50px;
+	margin-top: -4px;
+	position: absolute;
+	top: 185px;
+	-webkit-transform: scale(0, 1);
+	transform: scale(0, 1);
+	-webkit-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+	width: 202px;
   }
   
