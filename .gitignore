@@ -1,3 +1,5 @@
 # Don't track content of these folders
 accounts/__pycache__/
 palindrome/__pycache__/
+accounts/migrations/__pycache__/
+core/__pycache__/
