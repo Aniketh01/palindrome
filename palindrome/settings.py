@@ -71,7 +71,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'palindrome.wsgi.application'
 
-LOGIN_REDIRECT_URL = 'home'
+LOGIN_REDIRECT_URL = '/core/add_ip'
 LOGOUT_REDIRECT_URL = 'home'
 
 # Database

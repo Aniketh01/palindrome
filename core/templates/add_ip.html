@@ -1,7 +1,9 @@
 {% extends 'base.html' %}
 {% block title %}Home{% endblock %}
 {% block content %}
-<h1> Hi {{ user.username }} </h1>
+
+{% if user.is_authenticated %}
+<h1> You Are  {{ user.username }} </h1>
 <div>
     <form method="post" action="">
         {% csrf_token %}
@@ -15,4 +17,7 @@
     </form>
 </div>
 <div>
+{% else %}
+<h1> Please Login ! </h1>
+{% endif %}
 {% endblock %}
