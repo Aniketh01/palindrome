@@ -13,4 +13,4 @@ def send_packet():
     #print ("UDP target port:", UDP_PORT)
     #print "message:", MESSAGE
 
-send_packet()
+s   #end_packet()
