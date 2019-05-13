@@ -9,14 +9,16 @@
   Hi {{ user.username }}!
   
   
-<h1>Who doesn't like fun buttons?</h1>
-
-<button class="btn third">Button 3</button>
-<button class="btn third">Button 3</button>
-
-<p>Inspiration for new ways to make interactive buttons using linear-gradients, box-shadows, and pseudo classes!</p>
-{% else %}
   <h1>Team Palindrome</h1>
+<div align="center" class="row">
+  <div class="col-sm-6">
+    <button class="btn third">Secure Mode</button>
+  </div>
+  <div class="col-sm-4">
+    <button class="btn third">Normal Mode</button>
+  </div>
+</div>
+{% else %}
   <a href="{% url 'login' %}">login</a>
 
 {% endif %}
