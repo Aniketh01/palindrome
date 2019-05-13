@@ -18,9 +18,12 @@ class add_IP(generic.CreateView):
     def post(self, request):
         form = addIPForm(request.POST)
         if form.is_valid():
-            ipaddr = form.save(commit=false)
-            post.user = request.user
-            post.save()
+            ipaddr = form.save(commit=False)
+            ipaddr.user = request.user
+            ipaddr.save()
+
+            text = form.cleaned_data['ipaddr']
+            form = addIPForm()
 
         args = {'form': form, 'text': text}
         return render(request, self.template_name, args)
