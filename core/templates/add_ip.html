@@ -1,3 +1,17 @@
-<html>
-    <p>hi</p>
-</html>
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<h1> Hi {{ user.username }} </h1>
+<div>
+    <form method="post" action="">
+        {% csrf_token %}
+        <div class="wrapper">
+            <input class="input" placeholder="Please Enter IP Address" type="text">
+            <span class="underline"></span>
+            <button name="secure" value="1" class="btn third" type="submit">Secure Mode</button>
+            <button name="normal" value="0" class="btn fourth" type="submit">Normal Mode</button>
+        </div>
+    </form>
+</div>
+<div>
+{% endblock %}
