@@ -7,28 +7,14 @@
 {% block content %}
 {% if user.is_authenticated %}
   Hi {{ user.username }}!
-  <p>
-
-    <style type="text/css">
-      .btn1 {
-          background-color:red;
-          cursor:pointer;
-      }
-  </style>
   
-  <button class="btn1">Secure Mode</button>
-  </p>
-  <p>
-    <style type="text/css">
-      .btn {
-          background-color:green;
-          cursor:pointer;
-      }
-  </style>
   
-  <button class="btn">Normal Mode</button>
-  </p>
+<h1>Who doesn't like fun buttons?</h1>
 
+<button class="btn third">Button 3</button>
+<button class="btn third">Button 3</button>
+
+<p>Inspiration for new ways to make interactive buttons using linear-gradients, box-shadows, and pseudo classes!</p>
 {% else %}
   <h1>Team Palindrome</h1>
   <a href="{% url 'login' %}">login</a>
