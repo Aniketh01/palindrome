@@ -23,3 +23,15 @@ class add_logger(generic.CreateView):
         form= logger(request.POST)
         args = {'form': form, 'text': text}
         return render(request, self.template_name, args)
+    
+    def search(request):
+        if 'inp' in request.GET:
+            print(request.GET)
+            message = 'You submitteds: %r' % request.GET['inp']
+        else:
+            message = 'You submitted nothing!'    
+        return render(request , 'test.html')
+
+    def profile_page(request, username=None):
+        user = User.objects.get(username=username)
+        message = request.GET.get('message')
