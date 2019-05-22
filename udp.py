@@ -2,9 +2,8 @@ import sys
 import socket
 
 def send_packet():
-    #while(1):
     UDP_IP = sys.argv[1]
-    UDP_PORT = 5005
+    UDP_PORT = 4210
     MESSAGE = sys.argv[2]
     sock = socket.socket(socket.AF_INET, # Internet
     socket.SOCK_DGRAM) # UDP
@@ -12,4 +11,4 @@ def send_packet():
     print ("UDP target IP:", UDP_IP)
     print ("UDP target port:", UDP_PORT)
 
-    #end_packet()
+send_packet()
