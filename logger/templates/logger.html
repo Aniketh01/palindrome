@@ -3,18 +3,18 @@
 {% block content %}
 
 {% if user.is_authenticated %}
-<div>
-    <form method="post" action="">
-        {% csrf_token %}
-        <div class="wrapper">
-            <p class="description">Append IP Address with your mode.</p>
-            <br>
-            <br>
-            <p class="description">* 1 Secure Mode</p>
-            <br>
-            <p class="description">* 0 Normal Mode</p>
-        </div>
-    </form>
+<div>  
+    {% if 'intruder' in request.GET %}
+    <script>
+        let intruderAlert = confirm("An Intruder has been detected");
+        alert(intruderAlert);
+    </script>    
+    {% elif 'fire' in request.GET %}
+    <script>
+        let fireAlert = confirm("Fire has been detected");
+        alert(fireAlert);
+    </script>
+    {% endif %}
 </div>
 <div>
 {% else %}
