@@ -5,4 +5,5 @@ accounts/migrations/__pycache__/
 core/__pycache__/
 logger/migrations/__pycache__/
 logger/__pycache__/
-
+__pycache__
+.pyc
