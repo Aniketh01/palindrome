@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+
+{% if user.is_authenticated %}
+<div>
+    <form method="post" action="">
+        {% csrf_token %}
+        <div class="wrapper">
+            <p class="description">Append IP Address with your mode.</p>
+            <br>
+            <br>
+            <p class="description">* 1 Secure Mode</p>
+            <br>
+            <p class="description">* 0 Normal Mode</p>
+        </div>
+    </form>
+</div>
+<div>
+{% else %}
+<h1> Please Login ! </h1>
+{% endif %}
+{% endblock %}

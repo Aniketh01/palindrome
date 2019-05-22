@@ -3,3 +3,6 @@ accounts/__pycache__/
 palindrome/__pycache__/
 accounts/migrations/__pycache__/
 core/__pycache__/
+logger/migrations/__pycache__/
+logger/__pycache__/
+
