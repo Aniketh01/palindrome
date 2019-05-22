@@ -3,21 +3,19 @@
 {% block content %}
 
 {% if user.is_authenticated %}
-<div>  
+<div>
     {% if 'intruder' in request.GET %}
     <script>
-        let intruderAlert = confirm("An Intruder has been detected");
-        alert(intruderAlert);
-    </script>    
+        alert("An Intruder has been detected");
+    </script>
     {% elif 'fire' in request.GET %}
     <script>
-        let fireAlert = confirm("Fire has been detected");
-        alert(fireAlert);
+        alert("Fire has been detected");
     </script>
     {% endif %}
 </div>
 <div>
-{% else %}
-<h1> Please Login ! </h1>
-{% endif %}
-{% endblock %}
+    {% else %}
+    <h1> Please Login ! </h1>
+    {% endif %}
+    {% endblock %}
