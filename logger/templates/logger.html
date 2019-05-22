@@ -8,6 +8,10 @@
         <p class="description"> You will Alerted if anything Happens inside the smart room</p>
 </div>
 <form action="/search/"  method="get" ></form>
+<input type="text" name="q">
+<input type="submit" value="Search">
+
+<!--
 <div>
     {% if 'intruder' in request.GET %}
     <script>
@@ -19,6 +23,7 @@
     </script>
     {% endif %}
 </div>
+-->
 <div>
     {% else %}
     <h1> Please Login ! </h1>
