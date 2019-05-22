@@ -3,6 +3,10 @@
 {% block content %}
 
 {% if user.is_authenticated %}
+<h1> Logger System is Activated</h1>
+<div class="wrapper">
+        <p class="description"> You will Alerted if anything Happens inside the smart room</p>
+</div>
 <div>
     {% if 'intruder' in request.GET %}
     <script>
